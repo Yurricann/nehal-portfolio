@@ -1,0 +1,443 @@
+@font-face {
+    font-family: tenada;
+    src: url(../font/Tenada.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor: #1e47ff;
+    --darkColor: #1c1c1c;
+    --iconsBgColor: #f5c76a;
+    --lightBlue: #b5EEf7;
+    --pinkColor: #c8567a;
+    --titlesFont: tenada;
+    --contentFont: "Poppins", sans-serif;
+    --whiteColor: white;
+}
+
+body{
+    font-family: var(--contentFont);
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+}
+
+main{
+    margin-top: 100px;
+}
+
+/* Navigation */
+
+nav{
+    background-color: #f5f5f5;
+}
+
+
+nav .container{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+nav .navbar-nav a{
+    font-size: 1.125rem;
+    color: var(--darkColor);
+}
+
+nav .navbar-collapse .navbar-nav{
+    margin: 0 auto;
+}
+
+nav .navbar-nav  a:hover,
+nav .navbar-nav a.active{
+    color: var(--primaryColor) !important;
+}
+
+nav button.hireBtn{
+    color: #fff;
+    background-color: var(--primaryColor) ;
+    width: 7.6875rem;
+    height: 2.625rem;
+}
+
+nav button.hireBtn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primaryColor);
+    color: var(--primaryColor);
+}
+
+nav .navbar-toggler.collapsed,
+nav .navbar-toggler {
+    border: none;
+}
+
+nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+nav .socialMedia {
+    padding-left: 2px;
+}
+
+nav .socialMedia a:first-child{
+    font-size: 1.5rem;
+    color: var(--darkColor);
+}
+nav .socialMedia a:last-child{
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+}
+
+/* Landing */
+
+.landing .intro img{
+    width: 2.0475rem;
+    height: 1.9788rem;
+    padding: 0.625;
+}
+
+.landing .intro p,
+.landing p{
+    padding: 0.625rem;
+    font-size: 1.375rem;
+    line-height: 2.2rem;
+    margin-bottom: 0;
+}
+
+
+.landing .intro p span{
+    color: var(--pinkColor);
+}
+
+.landing h1{
+    font-family: var(--titlesFont);
+    text-align: center;
+    font-size: 8rem;
+    color: var(--darkColor);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 8rem;
+    letter-spacing: 0.02em;
+}
+
+
+.landing h1 span{
+    display: block;
+    padding-top: 0.5rem;
+    -webkit-text-stroke-color: var(--darkColor);
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
+}
+
+.landing .location img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+.landing .btn{
+    font-size: 1.375rem;
+    line-height: 2.0625rem;
+    padding: 1.375rem 2.25rem;
+    border: 1px solid var(--darkColor);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    font-weight: bold;
+}
+
+
+.landing .btn:first-of-type{
+    background-color: var(--primaryColor);
+    color: #fff;
+    border-color: var(--primaryColor);
+}
+.landing .btn:first-of-type:hover{
+    background-color: transparent;
+    color: var(--darkColor);
+    border-color: var(--darkColor);
+}
+
+
+.landing .btn:hover{
+    background-color: var(--primaryColor);
+    color: #fff;
+    border-color: var(--primaryColor);
+}
+
+@media (max-width: 1400px) {
+    .landing h1{
+        font-size: 7rem;
+        line-height: 7rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .landing h1{
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+}
+
+@media (max-width: 991px) {
+    
+    .landing .intro p,
+    .landing p{
+        font-size: 1rem;
+    }
+
+    .landing h1{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+        
+    .landing .btn{
+        font-size: 1rem;
+        line-height: 2.0625rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+    
+    .landing h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .landing .btn{
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+        
+    }
+}
+
+
+/* What I Do */
+
+.wid .wid-text{
+    color: var(--pinkColor);
+    font-weight: bold;
+    font-family: tenada;
+    font-size: 1.875rem;
+    line-height: 1.75rem;
+}
+.wid h2{
+    font-size: 3.5rem;
+    padding-top: 1.5rem;
+}
+
+.wid h3{
+    font-family: tenada;
+    padding-top: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 2.875rem;
+}
+
+.wid h3 + p{
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: var(--darkColor);
+}
+
+.wid .icon img{
+    width: 64.19px;
+    height: 68.65px;
+}
+
+
+/* Writing */
+.content-writing {
+    background-color: var(--primaryColor);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    color: var(--whiteColor);
+    z-index: 2;
+    padding-bottom: 5rem;
+    border-end-end-radius: 0;
+    border-end-start-radius: 0;
+    padding-bottom: 5rem;
+}
+
+.content-writing::before{
+    content: "";
+    position: absolute;
+    background:url(../images/dots.png);
+    width: 158.67px;
+    height: 145.61px;
+    bottom: 20rem;
+    left: -79px;
+    background-size: contain;
+}
+
+.content-writing::after{
+    content: "";
+    position: absolute;
+    background:url(../images/dots.png);
+    width: 158.67px;
+    height: 145.61px;
+    top: 6rem;
+    right: -115px;
+    background-size: contain;
+}
+
+.content-writing .container{
+    position: relative;
+    z-index: 2;
+}
+.content-writing h2{
+    font-size: 3.5rem;
+    line-height: 3.5;
+}
+
+.content-writing .bottomSection{
+    width: 100%;
+    bottom: -6rem;
+    z-index: 1;
+    left: 0;
+    background-color: var(--primaryColor);
+}
+
+.content-writing .btn{
+    margin-top: 3rem;
+    font-size: 1.375rem;
+    line-height: 2.0625rem;
+    font-weight: bold;
+    border: 1px solid var(--darkColor);
+    padding: 1.375rem 2.25rem;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.content-writing .btn{
+    background-color: #F5F5F5;
+}
+
+@media (max-width:991px) {
+    
+    .content-writing .bottomSection{
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .content-writing::before{
+        bottom: 15rem;
+    }
+    .content-writing::after{
+        top: 10rem;
+    }
+
+    .content-writing h2{
+        font-size: 1.8rem;
+        line-height: 3;
+    }
+    
+}
+
+/* UI Desing */
+
+.ui-project h2{
+    font-size: 3rem;
+    color: var(--darkColor);
+    font-family: tenada;
+}
+
+.ui-project h3{
+    font-size: 4rem;
+    line-height: 1.5rem;
+}
+
+.ui-project img{
+    width: 145%;
+    position: relative;
+    top: 0;
+    left: -190px;
+}
+
+.ui-project p{
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+
+@media (max-width: 767px) {
+    
+.ui-project img{
+    left: -120px;
+}
+}
+
+/* Project timeline */
+
+.project-timeline h3{
+    font-size: 4rem;
+    line-height: 1.5rem;
+}
+
+.project-timeline .apploginpic{
+    width: 100%;
+    position: relative;
+}
+
+.project-timeline p{
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+.project-timeline .btn{
+    margin-top: 5rem;
+    font-size: 1.375rem;
+    line-height: 2.0625rem;
+    font-weight: bold;
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+    padding: 1.375rem 2.25rem;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.wave{
+    top: 0;
+    background-color: var(--primaryColor);
+}
+
+footer{
+    background-color: var(--primaryColor);
+}
+
+footer p,
+footer a{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: var(--whiteColor);
+}
+
+footer a{
+    color: var(--whiteColor);
+}
+
+
+footer img{
+    width: 20px;
+}
+
+footer .phonenumber{
+    margin-left: 1rem;
+    text-decoration: none;
+    vertical-align: middle;
+}
